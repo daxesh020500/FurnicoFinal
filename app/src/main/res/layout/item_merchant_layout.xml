@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_merchant_rating"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="rating"
+            android:text="rating"
+            app:layout_constraintStart_toStartOf="@+id/tv_merchant_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_merchant_name" />
+
+        <TextView
+            android:id="@+id/tv_merchant_name"
+            android:layout_width="138dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="40dp"
+            android:text="Merchant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_merchant_pricetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            app:layout_constraintStart_toStartOf="@+id/tv_merchant_rating"
+            app:layout_constraintTop_toTopOf="@+id/tv_merchant_price" />
+
+        <TextView
+            android:id="@+id/tv_merchant_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="24dp"
+            android:text="Amounttobe shown"
+            app:layout_constraintStart_toEndOf="@+id/tv_merchant_pricetext"
+            app:layout_constraintTop_toBottomOf="@+id/tv_merchant_rating" />
+
+        <Button
+            android:id="@+id/tv_merchant_button"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:text="Buy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_merchant_price" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

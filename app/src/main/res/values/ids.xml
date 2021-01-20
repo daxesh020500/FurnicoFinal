@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_user_cart_item_no_of_products" type="id" />
+    <item name="bt_user_cart_item_decrease" type="id" />
+    <item name="iv_user_cart_item_product_image" type="id" />
+    <item name="tv_user_cart_item_product_name" type="id" />
+    <item name="tv_user_cart_item_category" type="id" />
+    <item name="tv_user_cart_item_price" type="id" />
+    <item name="bt_user_cart_item_add" type="id" />
+</resources>

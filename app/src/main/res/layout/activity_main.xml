@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base"
+
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:background="@color/teal_200"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageButton
+            android:id="@+id/ibt_home_page_cart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/bt_home_page_menu"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/menu"
+            android:src="@drawable/search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/furnico"
+            app:layout_constraintEnd_toStartOf="@+id/ibt_home_page_cart"
+            app:layout_constraintStart_toEndOf="@+id/bt_home_page_menu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/sv_activity_main_search"
+            android:layout_width="323dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/base"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <HorizontalScrollView
+                android:id="@+id/s_activity_main_slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_home_page_search">
+                <ImageView
+                    android:id="@+id/iv_activity_main_featured1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:layout_marginHorizontal="10dp"/>
+                <ImageView
+                    android:id="@+id/iv_activity_main_featured2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:layout_marginHorizontal="10dp"/>
+                <ImageView
+                    android:id="@+id/iv_activity_main_featured3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:layout_marginHorizontal="10dp"/>
+                <ImageView
+                    android:id="@+id/iv_activity_main_featured4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:layout_marginHorizontal="10dp"/>
+                <ImageView
+                    android:id="@+id/iv_activity_main_featured5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:layout_marginHorizontal="10dp"/>
+            </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ctv_activity_main_category11"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="0dp"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sofa"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_activity_main_category1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:text="Sofa"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ctv_activity_main_category12"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/cardView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chair"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_activity_main_category2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:text="Chair"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ctv_activity_main_category13"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/cardView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_activity_main_category3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:text="Table"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ctv_activity_main_category14"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/cardView7"
+                tools:layout_editor_absoluteX="176dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/beanbag"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_activity_main_category4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bean Bag"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ctv_activity_main_category15"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView8"
+                tools:layout_editor_absoluteX="195dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bed"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_activity_main_category5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bed"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

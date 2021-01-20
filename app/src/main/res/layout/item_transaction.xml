@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_transaction_product_name"
+            android:layout_width="118dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Product Name "
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_transaction_merchant_name"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:gravity="center"
+            android:text="Product Details"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="@+id/tv_transaction_product_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_transaction_price"
+            android:layout_width="140dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="244dp"
+            android:layout_marginLeft="244dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Price"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_transaction_merchant_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
