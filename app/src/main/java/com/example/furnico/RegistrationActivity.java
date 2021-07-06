@@ -35,6 +35,7 @@ public class RegistrationActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Button btnRegister = findViewById(R.id.bt_activity_registeration_register);
+        //Validation added
         btnRegister.setOnClickListener(v -> {
             Pattern pattern = Pattern.compile("^\\d{10}$");
             String name = ((EditText) findViewById(R.id.et_activity_register_fullname)).getText().toString();
@@ -48,7 +49,6 @@ public class RegistrationActivity extends AppCompatActivity {
                 Toast.makeText(RegistrationActivity.this, "Invalid Email Format", Toast.LENGTH_LONG).show();
             }else if(!pattern.matcher(phone).matches()){
                 Toast.makeText(RegistrationActivity.this, "Invalid Phone Format", Toast.LENGTH_LONG).show();
-
             }
             else {
                 Log.d("EditText", "No Error");
